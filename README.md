@@ -1,1 +1,3 @@
-"# FriedrichVoelker.github.io" 
+"# frie.drich.dev" 
+
+Personal Website hosted on github.io
