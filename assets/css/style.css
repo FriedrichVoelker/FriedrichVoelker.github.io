@@ -114,9 +114,16 @@ a:hover {
     color: rgb(115, 115, 116);
 }
 
+.main {
+    position: absolute;
+    height: 100vh;
+}
+
 .project_wrapper {
     background-color: rgb(80, 79, 79);
-    min-height: 90vmax;
+    position: relative;
+    height: 95%;
+    padding: 1em 1em;
     margin-bottom: 3%;
     margin-bottom: 3%;
     width: 80vw;
@@ -142,6 +149,7 @@ a:hover {
 
 .project {
     border-style: solid;
+    position: sticky;
     border-color: black;
     border-radius: 2%;
     max-width: 48%;

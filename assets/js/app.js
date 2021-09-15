@@ -15,7 +15,7 @@ function clickName() {
         var name = document.querySelector("#name");
         name.classList.add("fading")
         fadeout()
-        toggleName ? fadeName = "Test" : fadeName = "Friedrich"
+        toggleName ? fadeName = "xDragonTaX" : fadeName = "Friedrich"
     } else {
         console.log("fading")
     }
