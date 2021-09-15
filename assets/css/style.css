@@ -7,7 +7,6 @@ body {
     background-image: url("../img/background.bmp");
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 @keyframes gradient {
@@ -90,6 +89,14 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: rgb(39, 231, 238);
+}
+
+.license {
+    font-size: smaller;
+}
+
 .container {
     position: relative;
     min-height: calc(100vh - 2rem * 2);
@@ -107,8 +114,56 @@ a {
     color: rgb(115, 115, 116);
 }
 
-#projects {
-    visibility: hidden;
+.project_wrapper {
+    background-color: rgb(80, 79, 79);
+    height: 95vmax;
+    margin-bottom: 3%;
+    width: 80vw;
+    margin-left: 10vw;
+    border-radius: 3%;
+}
+
+.project_desc {
+    margin-left: 50px;
+}
+
+.project_header {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2.5rem;
+    color: lightgray;
+}
+
+.project {
+    border-style: solid;
+    border-color: black;
+    max-width: 48%;
+    margin: .5%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.project_contentwrapper {
+    margin: .5rem;
+}
+
+.project_img {
+    max-width: 420px;
+    max-height: 280px;
+    float: left;
+    margin-right: .3rem;
+    border-radius: 5%;
+}
+
+.project_subheader {
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project_links {
+    clear: left;
 }
 
 
