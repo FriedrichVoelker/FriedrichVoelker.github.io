@@ -91,3 +91,32 @@ function toggleProjects() {
     var projects = document.querySelector("#projects")
     projects.style.visibility = "visible"
 }
+
+
+function updateTime() {
+    var time = document.querySelector("#time");
+    var date = document.querySelector("#date");
+
+    var datum = new Date();
+
+    var seconds = datum.getSeconds()
+    seconds < 10 ? seconds = "0" + seconds : "";
+    var minutes = datum.getMinutes()
+    minutes < 10 ? minutes = "0" + minutes : "";
+    var hours = datum.getHours()
+    hours < 10 ? hours = "0" + hours : "";
+
+    var day = datum.getDate();
+    var month = datum.getMonth() + 1;
+    day < 10 ? day = "0" + day : "";
+    month < 10 ? month = "0" + month : "";
+
+    time.innerHTML = hours + ":" + minutes + ":" + seconds
+    date.innerHTML = day + "." + month + "." + datum.getFullYear();
+
+}
+
+
+
+updateTime()
+setInterval(updateTime, 1000);
